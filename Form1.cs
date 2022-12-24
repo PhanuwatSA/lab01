@@ -38,12 +38,7 @@ namespace lab01
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (n_input.Text.Length > 0)
-            {
-                n_input.Text = Convert.ToDouble(n_input.Text).ToString("N0");
-                n_input.SelectionStart = n_input.Text.Length;
-            }
-
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
