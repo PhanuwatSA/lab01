@@ -151,7 +151,9 @@ namespace lab01
             {
                 result = input1 / input2;
             }
-            this.n_input.Text = result.ToString("N0");
+
+            this.n_input.Text = Convert.ToString(result);
+            this.n_input.Text = string.Format("{0:#,##0.##################}", double.Parse(this.n_input.Text));
         }
 
         private void button17_Click(object sender, EventArgs e)
